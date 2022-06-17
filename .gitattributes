@@ -1,0 +1,4 @@
+*terraform-week5.m filter=lfs diff=lfs merge=lfs -text
+terraform-week5.m filter=lfs diff=lfs merge=lfs -text
+*.terraform-week5 filter=lfs diff=lfs merge=lfs -text
+*terraform-week5 filter=lfs diff=lfs merge=lfs -text
