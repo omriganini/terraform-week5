@@ -20,15 +20,16 @@ provider "azurerm" {
   features {}
 }
 
-
-# Configure the project
+```
+## Configure the project
 We will follow those instructions:
-![alt text](https://github.com/omriganini/test/blob/main/week-4-project-env.png?raw=true)
 
-### Create Resource Group
+![week-4-project-env](https://user-images.githubusercontent.com/105926044/174308223-c7dfc3b6-fc55-4d64-ab8d-ba64f12337c1.png)
+
+
+## Create Resource Group
 ```
 
-Apply the code and configuration, you will prompt with Yes No question.
 
 resource "azurerm_resource_group" "terraform-project" {
   name     = "Web-app-terraform"
@@ -38,25 +39,20 @@ resource "azurerm_resource_group" "terraform-project" {
 ```
 
 ## Build your infrastructure
-```
 After we configure the resource group we will build the infrastructure as required before.
 
+## our first command to initialize the providers environment will be:
 ```
-## Build your infrastructure
-
-```
-our first command to initialize the providers environment will be:
-
 terraform init 
-
-than we will check the code with:
-
+```
+## than we will check the code with:
+```
 terraform plan
-
-after we check its legit we will apply with:
-
+```
+## after we check its legit we will apply with:
+```
 terraform apply
-
-after we finish all the steps we will destroy everything and delete from the cloud with:
-
+```
+## after we finish all the steps we will destroy everything and delete from the cloud with:
+```
 terraform destroy
